@@ -63,7 +63,22 @@ public class Main {
 //                + "\nPreço: " + produto1.getPrecoUnitario() + "\nQuantidade: " + produto1.getQuantidade());
 
 //        Exercício 7) Crie uma instância de Produto obrigando o usuário a fornecer um nome
-        Produto produto3 = new Produto("Celular");
-        System.out.println(produto3.getNome());
+//        Produto produto3 = new Produto("Celular");
+//        System.out.println(produto3.getNome());
+
+//        Exercício 8) Forneça várias opções de criação da classe Cliente.
+        Endereco endereco1 = new Endereco();
+        endereco1.bairro = "Santana";
+        endereco1.cidade = "São Paulo";
+        endereco1.complemento = "Casa de esquina";
+        endereco1.estado = "SP";
+        endereco1.rua = "Braz Leme";
+        endereco1.numero = 1000;
+//      Criação obrigando com todos os atributos
+        Cliente cliente1 = new Cliente("José", "531578963548595", "alura@alura.com", "Jornalista", "66453321455", endereco1);
+//        Criação obrigando com nome e cpf
+        Cliente cliente2 = new Cliente("Josefino", "77855622165");
+//        Criação obrigando com nome, cpf e email
+        Cliente cliente3 = new Cliente("Jusberto", "663564866521", "jusberto@email.com");
     }
 }
