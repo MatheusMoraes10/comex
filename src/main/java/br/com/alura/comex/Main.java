@@ -4,14 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Produto produto1 = new Produto();
-        produto1.setNome("Espelho");
+        Produto produto1 = new Produto("Espelho");
         produto1.setDescricao("Moldura cinza");
         produto1.setPrecoUnitario(89.90);
         produto1.setQuantidade(10);
 
-        Produto produto2 = new Produto();
-        produto2.setNome("Espiriteira");
+        Produto produto2 = new Produto("Espiriteira");
         produto2.setDescricao("Combustível utilizado: Alcool");
         produto2.setPrecoUnitario(250.99);
         produto2.setQuantidade(35);
@@ -61,7 +59,11 @@ public class Main {
 //        System.out.println(cliente1.endereco.numero);
 
 //        Exercício 06 (Restringir visibilidade das propriedades do Produto)
-        System.out.println("nome :" + produto1.getNome() + "\nDescrição: " + produto1.getDescricao()
-                + "\nPreço: " + produto1.getPrecoUnitario() + "\nQuantidade: " + produto1.getQuantidade());
+//        System.out.println("nome :" + produto1.getNome() + "\nDescrição: " + produto1.getDescricao()
+//                + "\nPreço: " + produto1.getPrecoUnitario() + "\nQuantidade: " + produto1.getQuantidade());
+
+//        Exercício 7) Crie uma instância de Produto obrigando o usuário a fornecer um nome
+        Produto produto3 = new Produto("Celular");
+        System.out.println(produto3.getNome());
     }
 }
