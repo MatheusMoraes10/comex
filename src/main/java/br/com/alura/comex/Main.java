@@ -11,8 +11,16 @@ public class Main {
         produto1.precoUnitario = 89.90;
         produto1.quantidade = 10;
 
-        System.out.println("nome :" + produto1.nome + "\nDescrição: " + produto1.descricao
-                + "\nPreço: " + produto1.precoUnitario + "\nQuantidade: " + produto1.quantidade);
+        Produto produto2 = new Produto();
 
+        produto2.nome = "Espiriteira";
+        produto2.descricao = "Combustível utilizado: Alcool";
+        produto2.precoUnitario = 250.99;
+        produto2.quantidade = 35;
+
+        System.out.println("Produto 1 é igual produto 2 ? " + (produto1 == produto2));
+
+        System.out.println("Nome produto 1 é igual ao Nome produto 2? " + (produto1.nome == produto2.nome) +
+                "\nDescrição produto 1 é igual ao Descrição produto 2? " + (produto1.descricao == produto2.descricao));
     }
 }
